@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cmq6oviw6mttj"]
+
+[node name="Pong" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+text = "Pong"
