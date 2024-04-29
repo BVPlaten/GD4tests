@@ -1,26 +1,22 @@
 extends CanvasLayer
 
-var my_dict = {
-"PongButton": "res://pong.tscn",
-"TetrisButton": "res://tetris.tscn",
-"PictureButton": "res://picture.tscn",
-"SoundButton": "res://sound.tscn",
-"RotadeButton": "res://main.tscn",
-"NotAvailableButton": "res://main.tscn"
-}
+# instance of Navigation script for changing current script
+const Navi = preload("res://Navigation.gd")
+var nvgtn = Navi.new()
 
+# add desrtination scene to buttons
 func _ready():
-	# Get all the buttons in the CanvasLayer
-	var buttons = get_children()
-	
-	# Loop through each button
-	for button in buttons:
+	for button in get_children():
 		# Check if the node is a Button
 		if button is Button:
 			print(button.name)
 			button.pressed.connect(self._on_button_pressed.bind(button.name))
 
-
+# Change the current scene if button is pressed
 func _on_button_pressed(arg):
-	print("Button %s pressed  for scene %s" % [arg ,  my_dict[arg]])
-	get_tree().change_scene_to_file(my_dict[arg])
+	var scene_destination = nvgtn.get_scene(arg)
+	if scene_destination == null:
+		print("Button %s is not available" % arg)
+		return
+	print("Button %s was pressed for destination.scene %s" % [arg ,  scene_destination])
+	get_tree().change_scene_to_file(scene_destination)
