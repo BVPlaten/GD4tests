@@ -1,54 +1,57 @@
-[gd_scene format=3 uid="uid://de2ehs0phswv2"]
+[gd_scene load_steps=2 format=3 uid="uid://de2ehs0phswv2"]
+
+[ext_resource type="Script" path="res://MainMenue.gd" id="1_8bary"]
 
 [node name="main" type="Node2D"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_8bary")
 
 [node name="PongButton" type="Button" parent="CanvasLayer"]
 offset_left = 64.0
-offset_top = 128.0
+offset_top = 192.0
 offset_right = 290.0
-offset_bottom = 174.0
+offset_bottom = 238.0
 text = "Pong
 "
 
 [node name="TetrisButton" type="Button" parent="CanvasLayer"]
 offset_left = 64.0
-offset_top = 192.0
+offset_top = 128.0
 offset_right = 290.0
-offset_bottom = 238.0
+offset_bottom = 174.0
 text = "Tetris"
 
-[node name="Button3" type="Button" parent="CanvasLayer"]
+[node name="PictureButton" type="Button" parent="CanvasLayer"]
 offset_left = 64.0
 offset_top = 256.0
 offset_right = 290.0
 offset_bottom = 302.0
-text = "n.a.
+text = "show Picture
 "
 
-[node name="Button4" type="Button" parent="CanvasLayer"]
+[node name="SoundButton" type="Button" parent="CanvasLayer"]
 offset_left = 384.0
 offset_top = 128.0
 offset_right = 610.0
 offset_bottom = 174.0
-text = "n.a.
+text = "play Sound
 "
 
-[node name="Button5" type="Button" parent="CanvasLayer"]
+[node name="RotadeButton" type="Button" parent="CanvasLayer"]
 offset_left = 384.0
 offset_top = 192.0
 offset_right = 610.0
 offset_bottom = 238.0
-text = "n.a.
+text = "rotade 2D
 "
 
-[node name="Button6" type="Button" parent="CanvasLayer"]
+[node name="NotAvailableButton" type="Button" parent="CanvasLayer"]
 offset_left = 384.0
 offset_top = 256.0
 offset_right = 610.0
 offset_bottom = 302.0
-text = "n.a.
+text = "rotade 3D
 "
 
 [node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer"]
