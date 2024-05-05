@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmypr14l51n4a"]
+
+[ext_resource type="Script" path="res://Rotade2D.gd" id="1_2jnmn"]
+
+[node name="Rotade2D" type="Node"]
+script = ExtResource("1_2jnmn")
