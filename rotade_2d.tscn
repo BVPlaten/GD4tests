@@ -4,3 +4,11 @@
 
 [node name="Rotade2D" type="Node"]
 script = ExtResource("1_2jnmn")
+
+[node name="ItemList" type="ItemList" parent="."]
+offset_right = 128.0
+offset_bottom = 320.0
+item_count = 1
+item_0/text = ""
+
+[connection signal="item_clicked" from="ItemList" to="." method="_on_item_list_item_clicked"]
