@@ -12,12 +12,12 @@ var _nav_dict = {
 }
 
 func get_scene(param):
-    if _nav_dict.has(param):
-        return _nav_dict[param]
-    else:
-        return null
+	if _nav_dict.has(param):
+		return _nav_dict[param]
+	else:
+		return null
 
 
-    
+	
 
 
