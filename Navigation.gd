@@ -7,7 +7,7 @@ var _nav_dict = {
 "TetrisButton": "res://tetris.tscn",
 "PictureButton": "res://picture.tscn",
 "SoundButton": "res://sound.tscn",
-"RotadeButton": "res://main.tscn",
+"RotateButton": "res://rotate_2d.tscn",
 "NotAvailableButton": "res://main.tscn"
 }
 

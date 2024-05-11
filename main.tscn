@@ -38,12 +38,12 @@ offset_bottom = 174.0
 text = "play Sound
 "
 
-[node name="RotadeButton" type="Button" parent="CanvasLayer"]
+[node name="RotateButton" type="Button" parent="CanvasLayer"]
 offset_left = 384.0
 offset_top = 192.0
 offset_right = 610.0
 offset_bottom = 238.0
-text = "rotade 2D
+text = "Rotade2D
 "
 
 [node name="NotAvailableButton" type="Button" parent="CanvasLayer"]
@@ -64,5 +64,3 @@ offset_bottom = -256.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "GD4test "
-
-[connection signal="pressed" from="CanvasLayer/RotadeButton" to="CanvasLayer" method="_on_rotade_button_pressed"]
